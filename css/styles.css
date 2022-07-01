@@ -9,6 +9,8 @@
   --border-color: #ececec;
   --card-border-color: #eeeeee;
   --white-translucent: rgba(255, 255, 255, 0.6);
+  --network-icon-color: #afb1b8;
+  --network-icon-bg-color: rgba(255, 255, 255, 0.1);
   --main-font-family: Roboto;
   --bold: 700;
   --primary-font-size: 16px;
@@ -124,14 +126,27 @@ ul {
 .icon {
   display: block;
   align-self: center;
-  margin-right: 10px;
 
   fill: currentColor;
+}
+
+.contacts .icon {
+  margin-right: 10px;
 }
 
 /* Main page */
 
 .banner {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bunner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   background-color: var(--footer-bg-color);
   text-align: center;
 }
@@ -221,7 +236,10 @@ ul {
 
 .benefits .title {
   margin-bottom: 0;
+}
 
+.benefits .title,
+.footer .call {
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
@@ -251,6 +269,11 @@ ul {
   background-color: var(--primary-bg-color);
 }
 
+.card > .list {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 .team-worker {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -260,7 +283,7 @@ ul {
 
 .team-position {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .team-worker,
@@ -268,6 +291,38 @@ ul {
   font-size: var(--primary-font-size);
   line-height: 1.2;
   text-align: center;
+}
+
+.social-network {
+  display: block;
+  padding: 12px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+
+.team .social-network {
+  color: var(--network-icon-color);
+}
+
+.footer .social-network {
+  color: var(--primary-bg-color);
+  background-color: var(--network-icon-bg-color);
+}
+
+.social-network:hover,
+.social-network:focus {
+  background-color: var(--blue-color);
+
+  color: var(--primary-bg-color);
+}
+
+.network:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-network .icon {
+  fill: currentColor;
 }
 
 /* Portfolio */
@@ -374,4 +429,18 @@ ul {
 
 .address .contact {
   color: var(--white-translucent);
+}
+
+.footer .call {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--primary-bg-color);
+  font-weight: var(--bold);
+}
+
+.footer-network {
+  margin-left: 70px;
+  padding-top: 12px;
+  align-self: flex-start;
 }
