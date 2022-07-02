@@ -26,6 +26,7 @@ body {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .container {
@@ -56,6 +57,7 @@ img {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 .header .logo {
@@ -323,6 +325,19 @@ ul {
 
 .social-network .icon {
   fill: currentColor;
+}
+
+.clients-link {
+  display: block;
+  padding: 16px 32px;
+  height: 92px;
+  width: 170px;
+  color: var(--network-icon-color);
+  border: 1px solid var(--network-icon-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Portfolio */
