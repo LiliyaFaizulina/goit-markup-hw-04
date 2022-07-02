@@ -197,8 +197,13 @@ ul {
   cursor: pointer;
 }
 
-.benefits {
+.section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits {
+  padding-bottom: 0px;
 }
 
 .hidden {
@@ -256,11 +261,6 @@ ul {
   font-size: inherit;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .section-title {
