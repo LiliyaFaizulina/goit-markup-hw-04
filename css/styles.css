@@ -19,8 +19,8 @@ html {
   --border-color: #ececec;
   --card-border-color: #eeeeee;
   --white-translucent: rgba(255, 255, 255, 0.6);
-  --network-icon-color: #afb1b8;
-  --network-icon-bg-color: rgba(255, 255, 255, 0.1);
+  --icon-color: #afb1b8;
+  --icon-bg-color: rgba(255, 255, 255, 0.1);
   --main-font-family: Roboto;
   --bold: 700;
   --primary-font-size: 16px;
@@ -315,12 +315,12 @@ ul {
 }
 
 .team .social-network {
-  color: var(--network-icon-color);
+  color: var(--icon-color);
 }
 
 .footer .social-network {
   color: var(--primary-bg-color);
-  background-color: var(--network-icon-bg-color);
+  background-color: var(--icon-bg-color);
 }
 
 .social-network:hover,
@@ -343,8 +343,9 @@ ul {
   padding: 16px 32px;
   height: 92px;
   width: 170px;
-  color: var(--network-icon-color);
-  border: 1px solid var(--network-icon-color);
+
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
 }
 
